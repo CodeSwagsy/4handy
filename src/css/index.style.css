@@ -1,0 +1,163 @@
+@media (max-width: 1500px) {
+  body {
+    zoom: 0.8;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    zoom: 0.65;
+  }
+}
+
+@media (max-width: 770px) {
+  .if-inhalt-containter {
+    flex-wrap: wrap;
+  }
+  header {
+    zoom: 0.65;
+  }
+  .if-navigation a {
+    font-size: 3rem;
+  }
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to right, #1363df, hsl(216, 100%, 59%));
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+.if-navigation {
+  text-align: right;
+  margin: 3rem;
+  font-size: 1.5rem;
+}
+
+.if-navigation a {
+  text-decoration: none;
+  color: white;
+  padding: 2rem 3rem;
+  display: inline-block;
+  transition: 0.3s ease-out;
+  background-color: #47b5ff;
+  border-radius: 3rem;
+  border: 1px solid transparent;
+  margin-left: 1rem;
+}
+
+.if-navigation a:hover {
+  background-color: rgba(19, 101, 223, 0.75);
+  border: 1px solid #47b5ff;
+  padding: 2rem 3.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  height: 75px;
+  background: url(../img/blue/logo.png) left/contain no-repeat;
+  margin-left: 3rem;
+}
+
+.if-main-container {
+  color: white;
+}
+
+.if-background-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 187px;
+  background: url(../img/blue/top-background.png) top / contain no-repeat;
+  z-index: -1;
+}
+
+.if-background-bottom {
+  width: 100%;
+  height: 736px;
+  position: fixed;
+  bottom: 0;
+  background: url(../img/blue/bottom-background.png) bottom / contain no-repeat;
+  z-index: -1;
+}
+
+.if-mid-background {
+  display: inline-block;
+  background: url(../img/blue/mid-background.png) bottom / contain no-repeat;
+  padding: 0 2rem;
+}
+
+.if-mid-background img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.if-inhalt-containter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  font-size: 3rem;
+}
+
+.if-inhalt {
+  width: 800px;
+}
+
+.if-inhalt h1,
+.if-inhalt p {
+  padding: 0 3rem;
+}
+
+.if-inhalt h1 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.if-inhalt p:nth-child(2) {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+.if-inhalt p:nth-child(3) {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 5rem;
+}
+
+.if-inhalt-links {
+  margin-left: 3rem;
+}
+
+.if-inhalt-links a {
+  display: inline-block;
+
+  background-color: #47b5ff;
+  text-decoration: none;
+  color: white;
+  padding: 2rem 5%;
+  border-radius: 3rem;
+  transition: 0.3s ease-out;
+  margin: 2rem 0;
+  border: 1px solid transparent;
+  font-size: 1.5rem;
+}
+
+.if-inhalt-links a:hover {
+  background-color: #1363df;
+  border: 1px solid #47b5ff;
+  padding: 2rem 3.5rem;
+}
