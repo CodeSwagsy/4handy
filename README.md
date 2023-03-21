@@ -15,13 +15,13 @@ Manuel
 
 **Aufgabenverteilung:**
 
-Ihor
+Ihor:
 
-Fredy
+Fredy:
 
-Hanna Kontakt
+Hanna: Kontakt
 
-Manuel About Us
+Manuel: About Us
 
 
 **Allgemeine Designabsprachen:**
