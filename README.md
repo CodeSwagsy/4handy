@@ -15,6 +15,7 @@ Manuel
 
 **Aufgabenverteilung:**
 
+| Wer    | Aufgabe   |
 |--------|-----------|
 | Ihor   | Frontpage |
 | Fredy  | Produkte  |
