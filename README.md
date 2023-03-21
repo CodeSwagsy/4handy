@@ -5,16 +5,24 @@ Allgemeine Informationen zum 4handy Projekt:
 **Das Team besteht aus:**
 
 Ihor
+
 Fredy
+
 Hanna
+
 Manuel
+
 
 **Aufgabenverteilung:**
 
-Ihor:
-Fredy:
-Hanna: Kontakt
-Manuel: About Us
+Ihor
+
+Fredy
+
+Hanna Kontakt
+
+Manuel About Us
+
 
 **Allgemeine Designabsprachen:**
 
@@ -33,6 +41,7 @@ Palette 2:
 #39A2DB
 #A2DBFA
 #E8F0F2
+
 
 Schriftarten:
 
