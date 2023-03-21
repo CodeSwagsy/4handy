@@ -15,12 +15,12 @@ Manuel
 
 **Aufgabenverteilung:**
 
-| Name   | Aufgabe  |
-|--------|----------|
-| Ihor   | 34       |
-| Fredy  | 28       |
-| Hanna  | Kontakt  |
-| Manuel | About Us |
+| Name   | Aufgabe   |
+|--------|-----------|
+| Ihor   | Frontpage |
+| Fredy  | Produkte  |
+| Hanna  | Kontakt   |
+| Manuel | About Us  |
 
 
 **Allgemeine Designabsprachen:**
