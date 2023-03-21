@@ -3,11 +3,11 @@
 }
 
 body {
-  background-color: #06283D;
+  background-color: #1363DF;
 }
 
 .logo {
-  background-image: url(../images/logo.jpg);
+  background-image: url(../img/logo.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@ body {
 
 
 .leitbild-img {
-  background-image: url(../images/leitbild.jpg);
+  background-image: url(../img/leitbild.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -45,7 +45,7 @@ body {
 }
 
 .geschichte-img {
-  background-image: url(../images/geschichte.jpg);
+  background-image: url(../img/geschichte.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -70,4 +70,18 @@ body {
 
 .geschichte, .leitbild h1 {
   text-align: center;
+}
+
+.footerbox-md {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  height: 5em;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: #DFF6FF;
 }
