@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+
+}
+
+:root {
+  --color1: #06283D;
+  --color1-1: #216a97;
+  --color2: #1363DF;
+  --color3: #47B5FF;
+  --color4: #DFF6FF;
+}
+
+.ho-body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+  sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, 
+  var(--color1-1) 150px, 
+  var(--color3)150px, 
+  var(--color3)170px, 
+  var(--color1-1)170px, 
+  var(--color1-1)300px, 
+  var(--color3)300px,
+  var(--color4)600px,
+  var(--color3)800px,
+  var(--color1-1)800px);
+}
+
+.ho-header {
+  width: 100vw;
+  height: 250px;
+}
+
+.ho-h1 {
+  color: var(--color4);
+  text-align: center;
+  text-transform: uppercase;
+  height: 150px;
+  line-height: 150px;
+  margin-bottom: 20px;
+}
+
+.ho-box-kontakt {
+  width: 100vw;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ho-kontakt-list {
+  color: var(--color4);
+}
+
+.ho-kontakt-list i {
+  margin-right: 8px;
+}
+
+.ho-main {
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 50px;
+}
+
+.ho-abteilung-karte {
+  width: 300px;
+  height: 400px;
+  background-color: #7db1ff;
+  padding: 10px;
+  /* border: 3px solid var(--color4); */
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 0px #327dab;
+  }
+
+.ho-Albus-bild, .ho-Harry-bild, .ho-Hermine-bild, .ho-Ron-bild {
+  width: 150px;
+  height: 200px;
+  background-position: center top;
+  background-size: cover;
+  margin: 25px 60px;
+}
+
+.ho-Albus-bild {
+  background-image: url(https://www.thefamouspeople.com/profiles/images/richard-harris-9.jpg);
+}
+
+.ho-Harry-bild {
+  background-image: url(https://image.tmdb.org/t/p/w500/iPg0J9UzAlPj1fLEJNllpW9IhGe.jpg);
+}
+
+.ho-Hermine-bild {
+  background-image: url(https://cdn.prod.www.spiegel.de/images/6784ca24-0001-0004-0000-000000020160_w640_r0.6686666666666666_fpx54.84_fpy30.jpg);
+}
+
+.ho-Ron-bild {
+  background-image: url(https://media.gq-magazine.co.uk/photos/63d11d176976c24cdf5b77c1/master/w_1600,c_limit/30%20Jan%20-%20Rupert%20Grint_Online_2.jpg);
+}
+
+.ho-abteilung-karte h4, h5 {
+  color: var(--color1);
+  line-height: 20px;
+  text-align: center;
+}
+
+.ho-footer {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 50px;
+}
+
+.ho-footer a {
+  font-size: 60px;
+  color: var(--color4);
+}
+
+.ho-footer a:hover {
+  color: var(--color3);
+}
+
+.ho-footer a:active {
+  color: var(--color2);
+}
