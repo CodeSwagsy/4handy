@@ -1,11 +1,8 @@
 * {
   margin: 0;
-  bottom: 0;
+  padding: 0;
   box-sizing: border-box;
-
-}
-
-:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --color1: #06283D;
   --color1-1: #216a97;
   --color2: #1363DF;
@@ -13,39 +10,13 @@
   --color4: #DFF6FF;
 }
 
-.ho-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-  sans-serif;
-  width: 100vw;
+body {
+  width: 100%;
   height: 100vh;
-  /* background-image: linear-gradient(to bottom, 
-  var(--color1-1) 150px, 
-  var(--color3)150px, 
-  var(--color3)170px, 
-  var(--color1-1)170px, 
-  var(--color1-1)300px, 
-  var(--color3)300px,
-  var(--color4)600px,
-  var(--color3)800px,
-  var(--color1-1)800px); */
+  background: linear-gradient(to right, #1363df, hsl(216, 100%, 59%));
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-
-
-
-/* .ho-header {
-  width: 100vw;
-  height: 250px;
-}
-
-.ho-h1 {
-  color: var(--color4);
-  text-align: center;
-  text-transform: uppercase;
-  height: 150px;
-  line-height: 150px;
-  margin-bottom: 20px;
-} */
 
 .if-background-top {
   position: fixed;
@@ -93,15 +64,16 @@
   margin-left: 1em;
 }
 
+.aboutus h1 {
+  line-height: 2.5em;
+}
+
 .if-navigation {
   text-align: right;
   font-size: 1.5em;
   margin-top: 1em;
-}
-
-.if-navigation .home {
-
-  margin-left: 10em;
+  position: absolute;
+  right: 30px;
 }
 
 .if-navigation a {
@@ -123,21 +95,18 @@
   padding: 2rem 3.5rem;
 }
 
-
-
-
-
-
 .ho-box-kontakt {
   width: 100vw;
   height: 130px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: var(--color4);
 }
 
 .ho-kontakt-list {
-  color: var(--color4);
+  color: var(--color1);
 }
 
 .ho-kontakt-list i {
@@ -150,14 +119,12 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: relative;
-  top: 50px;
 }
 
 .ho-abteilung-karte {
   width: 300px;
   height: 400px;
-  background-color: #7db1ff;
+  background-color: var(--color3);
   padding: 10px;
   /* border: 3px solid var(--color4); */
   border-radius: 10px;
@@ -195,12 +162,13 @@
 }
 
 .ho-footer {
-  height: 140px;
+  height: 100px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: relative;
-  top: 50px;
+  position: absolute;
+  bottom: 10px;
 }
 
 .ho-footer a {
