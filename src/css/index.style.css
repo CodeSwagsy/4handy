@@ -1,26 +1,4 @@
-@media (max-width: 1500px) {
-  body {
-    zoom: 0.8;
-  }
-}
-
-@media (max-width: 1200px) {
-  body {
-    zoom: 0.65;
-  }
-}
-
-@media (max-width: 770px) {
-  .if-inhalt-containter {
-    flex-wrap: wrap;
-  }
-  header {
-    zoom: 0.65;
-  }
-  .if-navigation a {
-    font-size: 3rem;
-  }
-}
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap");
 
 body {
   margin: 0;
@@ -31,6 +9,7 @@ body {
 }
 
 .if-navigation {
+  display: flex;
   text-align: right;
   margin: 3rem;
   font-size: 1.5rem;
@@ -41,7 +20,7 @@ body {
   color: white;
   padding: 2rem 3rem;
   display: inline-block;
-  transition: 0.3s ease-out;
+  transition: 0.2s ease-out;
   background-color: #47b5ff;
   border-radius: 3rem;
   border: 1px solid transparent;
@@ -54,6 +33,13 @@ body {
   padding: 2rem 3.5rem;
 }
 
+.if-navigation a:active {
+  background-color: rgba(19, 101, 223, 0.75);
+  border: 1px solid #47b5ff;
+  padding: 2.25rem 3.5rem 1.75rem;
+  box-shadow: inset 5px 5px 5px #0d4496;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -64,7 +50,7 @@ header {
   width: 200px;
   height: 75px;
   background: url(../img/blue/logo.png) left/contain no-repeat;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 .if-main-container {
@@ -160,4 +146,309 @@ header {
   background-color: #1363df;
   border: 1px solid #47b5ff;
   padding: 2rem 3.5rem;
+}
+
+/* sidebar  */
+
+.menu-button {
+  display: flex;
+  align-items: center;
+}
+
+.menu-button a {
+  font-size: 3rem;
+  padding: 1rem;
+  margin-left: 2rem;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu-button a:hover {
+  transform: scale(1.25);
+}
+
+.sidenav:target {
+  width: 500px;
+  border-right: 1px solid #30363d;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #06283d;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 10rem;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+.sidenav a {
+  padding: 2rem 3rem;
+  text-decoration: none;
+  color: #47b5ff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+  background-color: #1363df;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0.75rem;
+  right: 0;
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+}
+
+.sidenav .closebtn:hover {
+  color: white;
+  background-color: #1363df;
+  border-radius: 3rem;
+}
+
+.sidenav a:nth-child(3):before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f007";
+  font-size: 2rem;
+  padding: 0 2rem;
+  display: inline-block;
+  width: 2rem;
+  text-align: center;
+}
+
+.sidenav a:nth-child(4):before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f15c";
+  font-size: 2rem;
+  padding: 0 2rem;
+  display: inline-block;
+  width: 2rem;
+  text-align: center;
+}
+
+.sidenav a:nth-child(6):before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f013";
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 0 2rem;
+  display: inline-block;
+  width: 2rem;
+  text-align: center;
+}
+
+.sidenav a:nth-child(5):before {
+  font-family: "Font Awesome 6 Free";
+  content: "\25";
+  font-size: 2rem;
+  padding: 0 2rem;
+  display: inline-block;
+  width: 2rem;
+  text-align: center;
+}
+
+.sidenav a:nth-child(7):before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f059";
+  font-size: 2rem;
+  padding: 0 2rem;
+  display: inline-block;
+  width: 2rem;
+  text-align: center;
+}
+
+/* responsive code  */
+
+@media (max-width: 1500px) {
+  body {
+    zoom: 0.8;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    zoom: 0.65;
+  }
+}
+
+@media (max-width: 900px) {
+  .if-inhalt-containter {
+    flex-wrap: wrap;
+  }
+  header {
+    zoom: 0.65;
+  }
+  .if-navigation a {
+    font-size: 2rem;
+  }
+}
+
+/* under 375px*/
+
+@media (max-width: 374px) {
+  .if-navigation a {
+    padding: 2rem 1.25rem;
+    font-size: 2.5rem;
+    width: 3ch;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .if-navigation {
+    margin: 3rem 2rem;
+  }
+  .logo {
+    display: none;
+  }
+  .sidenav {
+    font-size: 2.25rem;
+  }
+  .if-inhalt-links a {
+    padding: 2rem 1rem;
+  }
+  .if-inhalt-links {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+/* Between 375px and 425px */
+
+@media (min-width: 375px) and (max-width: 465px) {
+  .if-navigation a {
+    padding: 2rem 1.25rem;
+    font-size: 2.5rem;
+  }
+  .if-navigation {
+    margin: 3rem 2rem;
+  }
+  .logo {
+    display: none;
+  }
+  .sidenav {
+    font-size: 2.25rem;
+  }
+  .if-inhalt-links a {
+    padding: 2rem 1rem;
+  }
+  .if-inhalt-links {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+/* Between 426px and 768px */
+
+@media (min-width: 466px) and (max-width: 768px) {
+  .if-navigation a {
+    padding: 2rem 1.25rem;
+    font-size: 2.5rem;
+  }
+  .if-navigation {
+    margin: 3rem 2rem;
+  }
+  .sidenav {
+    font-size: 2.25rem;
+  }
+  .if-inhalt-links a {
+    padding: 2rem 1rem;
+  }
+  .if-inhalt-links {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .if-navigation a {
+    padding: 2rem 1.5rem;
+  }
+  .if-inhalt-links a {
+    padding: 2rem;
+    margin: 1.75rem;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+  .if-navigation a {
+    padding: 2rem 3rem;
+    border-radius: 4rem;
+  }
+  .sidenav:target {
+    width: 600px;
+  }
+}
+
+/* Between 768 and 900px */
+
+@media (min-width: 769px) and (max-width: 900px) {
+  .if-navigation a {
+    padding: 2rem 3rem;
+    border-radius: 4rem;
+    font-size: 3rem;
+  }
+  .if-navigation {
+    margin: 3rem 2rem;
+  }
+  .sidenav {
+    font-size: 2.25rem;
+  }
+  .if-inhalt-links a {
+    padding: 2rem 2rem;
+    font-size: 2rem;
+    border-radius: 4rem;
+    margin: 0 0.25rem;
+  }
+  .if-inhalt-links {
+    margin: 0;
+    text-align: center;
+  }
+  .sidenav:target {
+    width: 600px;
+  }
+}
+
+/* Between 901 and 900px */
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  .if-navigation a {
+    border-radius: 4rem;
+    font-size: 2rem;
+  }
+  .if-navigation {
+    margin: 3rem 2rem;
+  }
+  .sidenav {
+    font-size: 2.25rem;
+  }
+  .if-inhalt-links a {
+    margin: 1rem 0.25rem;
+  }
+  .if-inhalt-links {
+    margin: 0;
+    text-align: center;
+  }
+  .if-inhalt-containter {
+    margin-top: 12.5%;
+  }
+  .sidenav:target {
+    width: 600px;
+  }
+}
+
+/* Between 901 and 900px */
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+  .if-inhalt-containter {
+    margin-top: 8%;
+  }
 }
