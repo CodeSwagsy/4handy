@@ -96,47 +96,51 @@ body {
 }
 
 .ho-box-kontakt {
-  width: 100vw;
-  height: 130px;
+  width: 100%;
   margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: var(--color4);
+  padding: 15px;
 }
 
 .ho-kontakt-list {
   color: var(--color1);
+  display: inline-block;
 }
+
+/* .ho-header-map {
+  width: 20%;
+} */
 
 .ho-kontakt-list i {
   margin-right: 8px;
 }
 
 .ho-main {
-  width: 100vw;
-  height: 500px;
+  width: 100%;
   display: flex;
+  justify-content:space-around;
   align-items: center;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 60px;
 }
 
 .ho-abteilung-karte {
-  width: 300px;
-  height: 400px;
+  width: 330px;
   background-color: var(--color3);
-  padding: 10px;
-  /* border: 3px solid var(--color4); */
+  padding: 30px;
   border-radius: 10px;
-  box-shadow: 0px 0px 30px 0px #327dab;
+  box-shadow: 0px 0px 30px 0px #265979;
   }
 
 .ho-Albus-bild, .ho-Harry-bild, .ho-Hermine-bild, .ho-Ron-bild {
   width: 150px;
-  height: 200px;
-  background-position: center top;
-  background-size: cover;
-  margin: 25px 60px;
+  height: 160px;
+  margin: 25px auto;
+  background-size:cover;
+  align-items: center;
 }
 
 .ho-Albus-bild {
@@ -162,17 +166,15 @@ body {
 }
 
 .ho-footer {
-  height: 100px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: absolute;
-  bottom: 10px;
+  bottom: 30px 0;
 }
 
 .ho-footer a {
-  font-size: 60px;
+  font-size: 50px;
   color: var(--color4);
 }
 
