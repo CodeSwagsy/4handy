@@ -1,12 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background: linear-gradient(to right, #1363df, hsl(216, 100%, 59%));
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  box-sizing: border-box;
 }
+
+/* navbar  */
+/* navbar  */
+/* navbar  */
 
 .if-navigation {
   display: flex;
@@ -33,7 +40,8 @@ body {
   padding: 2rem 3.5rem;
 }
 
-.if-navigation a:active {
+.if-navigation a:active,
+.if-inhalt-links a:active {
   background-color: rgba(19, 101, 223, 0.75);
   border: 1px solid #47b5ff;
   padding: 2.25rem 3.5rem 1.75rem;
@@ -52,6 +60,10 @@ header {
   background: url(../img/blue/logo.png) left/contain no-repeat;
   margin-left: 2rem;
 }
+
+/* background vs. main inhalt */
+/* background vs. main inhalt */
+/* background vs. main inhalt */
 
 .if-main-container {
   color: white;
@@ -130,14 +142,13 @@ header {
 
 .if-inhalt-links a {
   display: inline-block;
-
   background-color: #47b5ff;
   text-decoration: none;
   color: white;
   padding: 2rem 5%;
   border-radius: 3rem;
   transition: 0.3s ease-out;
-  margin: 2rem 0;
+  margin: 2rem 1rem 2rem 0rem;
   border: 1px solid transparent;
   font-size: 1.5rem;
 }
@@ -148,7 +159,9 @@ header {
   padding: 2rem 3.5rem;
 }
 
-/* sidebar  */
+/* side menu */
+/* side menu */
+/* side menu */
 
 .menu-button {
   display: flex;
@@ -170,7 +183,26 @@ header {
 
 .sidenav:target {
   width: 500px;
-  border-right: 1px solid #30363d;
+  border-right: 1px solid #1363df;
+}
+
+.personInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.personInfo img {
+  width: 30%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.personInfo p {
+  color: #47b5ff;
+  margin-top: 2.5rem;
 }
 
 .sidenav {
@@ -267,6 +299,169 @@ header {
   text-align: center;
 }
 
+/* popUp */
+/* popUp */
+/* popUp */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  padding: 3rem;
+  background: #47b5ff;
+  border-radius: 1rem;
+  width: 40%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+.popup h4 {
+  margin-top: 0;
+  color: white;
+  font-size: 2rem;
+}
+.popup .close {
+  position: absolute;
+  top: 2rem;
+  right: 1.5rem;
+  transition: all 300ms;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1.25rem;
+}
+
+.popup .close:hover {
+  color: white;
+  background-color: #1363df;
+  border-radius: 3rem;
+}
+
+.sidenav .closebtn:hover {
+  color: white;
+  background-color: #1363df;
+  border-radius: 3rem;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.name,
+.stadt,
+.adress {
+  display: flex;
+}
+
+.name div:nth-child(2),
+.stadt div:nth-child(2),
+.adress div:nth-child(2) {
+  margin-left: 1rem;
+}
+
+.stadt div:nth-child(1),
+.adress div:nth-child(2) {
+  width: 50%;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.input-group input {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  width: 100%;
+  color: #1363df;
+  font-size: 1.25rem;
+  border: 3px solid transparent;
+}
+
+.input-group input:focus {
+  border: 3px solid #1363df;
+  outline: none;
+}
+
+.input-group input::placeholder {
+  font-size: 1.25rem;
+  color: #47b5ff;
+}
+
+.if-inhalt .content p {
+  margin: 3rem 0 1rem;
+  padding: 0;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.agb {
+  line-height: 1rem;
+}
+
+.agb label {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.agb input {
+  height: 1rem;
+  width: 1rem;
+}
+
+.agb a {
+  color: white;
+}
+
+.submit a {
+  text-align: center;
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: #1363df;
+  color: white;
+  padding: 1rem;
+  border-radius: 3rem;
+  transition: 0.3s ease-out;
+  margin: 2rem auto 0;
+  width: 35%;
+}
+
+.submit a:hover {
+  width: 40%;
+}
+
+.submit a::after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f1d8";
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: inline-block;
+  width: 2rem;
+}
+
+/* responsive code  */
+/* responsive code  */
 /* responsive code  */
 
 @media (max-width: 1500px) {
@@ -290,6 +485,9 @@ header {
   }
   .if-navigation a {
     font-size: 2rem;
+  }
+  .popup {
+    width: 50%;
   }
 }
 
@@ -319,9 +517,12 @@ header {
     margin: 0;
     text-align: center;
   }
+  .popup {
+    width: 100%;
+  }
 }
 
-/* Between 375px and 425px */
+/* Between 375px and 465px */
 
 @media (min-width: 375px) and (max-width: 465px) {
   .if-navigation a {
@@ -344,9 +545,12 @@ header {
     margin: 0;
     text-align: center;
   }
+  .popup {
+    width: 95%;
+  }
 }
 
-/* Between 426px and 768px */
+/* Between 466px and 768px */
 
 @media (min-width: 466px) and (max-width: 768px) {
   .if-navigation a {
@@ -365,6 +569,9 @@ header {
   .if-inhalt-links {
     margin: 0;
     text-align: center;
+  }
+  .popup {
+    width: 80%;
   }
 }
 
@@ -385,6 +592,9 @@ header {
   }
   .sidenav:target {
     width: 600px;
+  }
+  .popup {
+    width: 70%;
   }
 }
 
@@ -417,7 +627,7 @@ header {
   }
 }
 
-/* Between 901 and 900px */
+/* Between 901 and 1200px */
 
 @media (min-width: 901px) and (max-width: 1200px) {
   .if-navigation a {
@@ -445,10 +655,54 @@ header {
   }
 }
 
-/* Between 901 and 900px */
+/* Between 1201 and 1500px */
 
 @media (min-width: 1201px) and (max-width: 1500px) {
   .if-inhalt-containter {
     margin-top: 8%;
   }
 }
+
+/* animation  */
+/* animation  */
+/* animation  */
+
+/*
+
+.if-inhalt-containter {
+  position: relative;
+}
+
+.anm-1 {
+  position: absolute;
+  top: 60px;
+  left: 350px;
+  animation: flyingLeaf 20s infinite linear;
+}
+
+@keyframes flyingLeaf {
+  0% {
+    opacity: 0;
+    transform: scale(0) translate(0px);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1) translate(0, 0);
+  }
+  40% {
+    transform: scale(0.8) translate(100px, -100px);
+  }
+  60% {
+    transform: scale(0.6) translate(200px, -200px) rotateY(90deg);
+  }
+  80% {
+    transform: scale(0.4) translate(100px, -350px) rotateY(180deg);
+  }
+  100% {
+    transform: scale(0.2) translate(0px, -700px) rotateY(360deg);
+    opacity: 0;
+  }
+}
+
+
+*/

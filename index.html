@@ -22,6 +22,7 @@
         <a href="#nav0">☰</a>
         <div class="logo"></div>
       </div>
+
       <nav class="if-navigation">
         <a href="./product.html">Product</a>
         <a href="./kontakt.html">Contact</a>
@@ -33,21 +34,33 @@
 
       <div id="nav0" class="sidenav">
         <a href="#" class="closebtn">&times;</a>
-        <a href="#">Sich Anmelden</a>
-        <a href="#">Mein Konto</a>
+        <div class="personInfo">
+          <img
+            src="https://simplemaping.com/images/avatar%206.png"
+            alt="personicon"
+          />
+          <p>Hi, Max Musterman</p>
+        </div>
+        <a href="#">Personendaten</a>
         <a href="#">Vertrag</a>
         <a href="#">Angebote</a>
-        <a href="#">Services</a>
+        <a href="#">Einstellungen</a>
         <a href="#">Hilfe und Kontakt</a>
       </div>
     </header>
+
     <main class="if-main-container">
+      <!-- Background goes here -->
+
       <div class="if-background-top"></div>
       <div class="if-background-bottom"></div>
       <div class="if-inhalt-containter">
         <div class="if-mid-background">
           <img src="./src/img/blue/mid-people.png" alt="people" />
         </div>
+
+        <!-- Contents goes here -->
+
         <div class="if-inhalt">
           <h1>4Handy</h1>
           <p>Erlebe die grenzenlose Freiheit!</p>
@@ -56,8 +69,116 @@
             und ohne Registrierung!
           </p>
           <div class="if-inhalt-links">
-            <a href="#">Jetzt mehr erfahren</a>
-            <a href="#">Die besten Handytarife</a>
+            <a href="#popup">GRATIS bekommen!</a>
+            <a href="./product.html">Tarif aussuchen</a>
+          </div>
+
+          <!-- PopUp Form goes here -->
+
+          <div id="popup" class="overlay">
+            <div class="popup">
+              <h4>Test-SIM-Karte gratis bestellen</h4>
+              <a class="close" href="#">&times;</a>
+              <div class="content">
+                <form method="post" action="#">
+                  <div class="name">
+                    <div class="input-group">
+                      <label for="firstname"></label>
+                      <input
+                        id="firstname"
+                        type="text"
+                        placeholder="Vorname"
+                        name="firstname"
+                        required
+                      />
+                    </div>
+                    <div class="input-group">
+                      <label for="lastname"></label>
+                      <input
+                        id="lastname"
+                        type="text"
+                        placeholder="Nachname"
+                        name="lastname"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <label for="email"></label>
+                    <input
+                      id="lastname"
+                      type="email"
+                      placeholder="E-mail"
+                      name="lastname"
+                      required
+                    />
+                  </div>
+                  <p>
+                    Wohin sollte deine neue Test-SIM-Karte geschickt werden?
+                  </p>
+                  <div class="stadt">
+                    <div class="input-group">
+                      <label for="plz"></label>
+                      <input
+                        id="plz"
+                        type="text"
+                        placeholder="PLZ"
+                        name="PLZ"
+                        required
+                      />
+                    </div>
+                    <div class="input-group">
+                      <label for="stadt"></label>
+                      <input
+                        id="stadt"
+                        type="text"
+                        placeholder="Stadt"
+                        name="stadt"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="adress">
+                    <div class="input-group">
+                      <label for="strasse"></label>
+                      <input
+                        id="strasse"
+                        type="text"
+                        placeholder="Straße"
+                        name="strasse"
+                        required
+                      />
+                    </div>
+                    <div class="input-group">
+                      <label for="hausnr"></label>
+                      <input
+                        id="hausnr"
+                        type="text"
+                        placeholder="Nr."
+                        name="Hausnummer"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="agb">
+                    <input
+                      type="checkbox"
+                      id="agb"
+                      name="AGB"
+                      value="true"
+                      checked
+                    />
+                    <label for="agb"
+                      >Ich habe die <a href="#">AGB</a> gelesen und zur Kenntnis
+                      genommen</label
+                    >
+                  </div>
+                  <div class="submit">
+                    <a href="#">Senden</a>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
